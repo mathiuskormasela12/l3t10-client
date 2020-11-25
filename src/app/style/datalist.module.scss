@@ -1,0 +1,16 @@
+@import './variable';
+
+.success {
+	background-color: white;
+	color: $success;
+}
+
+.warning {
+	background-color: $dark;
+	color: $warning;
+}
+
+.danger {
+	background-color: $dark;
+	color: $danger;
+}

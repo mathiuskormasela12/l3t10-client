@@ -1,0 +1,27 @@
+@import  './variable';
+
+@mixin setMsg($color, $back) {
+	color: $color;
+	background-color: $back;
+}
+
+.form {
+	ul {
+		list-style: none;
+		li {
+			line-height: 2.5;
+		}
+	}
+}
+
+.success {
+	@include setMsg($success, white);
+}
+
+.warning {
+	@include setMsg($warning, $dark);
+}
+
+.danger {
+	@include setMsg($danger, $dark);
+}
